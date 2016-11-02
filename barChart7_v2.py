@@ -8,4 +8,5 @@ y = np.array([[195, 152, 129, 178, 167, 122, 145],
 
 if __name__ == "__main__":
     plt = BarhChart(x, y, ['Year 89', 'Year 90'])
-    plt.show()
+    plt.savefig('barChart7.jpg')
+    #plt.show()

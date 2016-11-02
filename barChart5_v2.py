@@ -6,4 +6,5 @@ y = [1140, 1140, 1140, 1080, 980, 890]
 
 if __name__ == "__main__":
     plt = BarChart(x, y, ["Weight (g)"])
-    plt.show()
+    plt.savefig('barChart5.jpg')
+    #plt.show()

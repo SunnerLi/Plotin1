@@ -7,4 +7,5 @@ y = [[5, 2, 2, 2, 2, 4], [6, 5, 5, 7, 5, 6]]
 
 if __name__ == "__main__":
     plt = BarhStackChart(x, y, ["Male", "Female"])
-    plt.show()
+    plt.savefig('barChart8.jpg')
+    #plt.show()

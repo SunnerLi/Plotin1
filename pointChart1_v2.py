@@ -8,4 +8,5 @@ tag = np.array(np.sign(x+y-20))
 
 if __name__ == "__main__":
     plt = PointChart(x, y, tag)
-    plt.show()
+    plt.savefig('pointChart1.jpg')
+    #plt.show()

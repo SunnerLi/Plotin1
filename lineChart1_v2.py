@@ -6,4 +6,5 @@ y = [25, 26.5, 27, 26.5, 26, 25.5]
 
 if __name__ == "__main__":
     plt = LineChart(x, y, ["Weight (kg)"])
-    plt.show()
+    plt.savefig('lineChart1.jpg')
+    #plt.show()

@@ -6,4 +6,5 @@ y = [84, 86, 88, 93, 86, 82]
 
 if __name__ == "__main__":
     plt = LineChart(x, y, ["Degree"])
-    plt.show()
+    plt.savefig('lineChart2.jpg')
+    #plt.show()

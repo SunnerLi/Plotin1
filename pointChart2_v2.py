@@ -20,4 +20,5 @@ if __name__ == "__main__":
     # Limit the scale
     plt.ylim(0, 11)
     plt.xlim(0, 11)
-    plt.show()
+    plt.savefig('pointChart2.jpg')
+    #plt.show()

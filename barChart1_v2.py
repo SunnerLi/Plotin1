@@ -8,4 +8,5 @@ y = [280, 200, 320, 120, 180]
 
 if __name__ == "__main__":
     plt = BarhChart(x, y, ["Cups"])
-    plt.show()
+    plt.savefig('barChart1.jpg')
+    #plt.show()

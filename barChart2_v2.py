@@ -7,4 +7,5 @@ labels = ['Second half year', 'First half year']
 
 if __name__ == "__main__":
     plt = BarStackChart(x, y, labels)
-    plt.show()
+    plt.savefig('barChart2.jpg')
+    #plt.show()

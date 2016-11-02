@@ -6,4 +6,5 @@ y = [45, 85, 105, 120, 125, 130]
 
 if __name__ == "__main__":
     plt = LineChart(x, y, ["Height (cm)"])
-    plt.show()
+    plt.savefig('lineChart3.jpg')
+    #plt.show()

@@ -9,4 +9,5 @@ y = [6, 49, 9, 20, 20, 83, 71, 103, 379]
 if __name__ == "__main__":
     plt = BarChart(x, y, ["Number"])
     plt = BarChart_ylim(plt, 0, 400)
-    plt.show()
+    plt.savefig('barChart4.jpg')
+    #plt.show()

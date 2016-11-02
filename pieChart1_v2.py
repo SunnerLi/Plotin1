@@ -6,4 +6,5 @@ x = ['Buy book', 'Deposit', 'Pocket money', 'Buy the model']
 
 if __name__ == "__main__":
     plt = PieChart(x, y)
-    plt.show()
+    plt.savefig('pieChart1.jpg')
+    #plt.show()

@@ -8,4 +8,5 @@ y = [[72, 77, 74, 74, 75, 70, 66], [78, 80, 80, 79, 79, 77, 69]]
 
 if __name__ == "__main__":
     plt = BarChart(x, y, ["Male", "Female"])
-    plt.show()
+    plt.savefig('barChart3.jpg')
+    #plt.show()
