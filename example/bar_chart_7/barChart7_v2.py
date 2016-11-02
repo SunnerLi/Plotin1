@@ -1,5 +1,9 @@
 from matplotlib import pyplot as plt
-from simpleChart import *
+import sys
+
+sys.path.append('../')
+import plotin1 as pi1
+
 
 x = ['Taipei', 'Kaohsiung', 'Keelung', 'Hsinchu', 'Taichung', 
         'Chiayi', 'Tainan']
@@ -8,5 +12,4 @@ y = np.array([[195, 152, 129, 178, 167, 122, 145],
 
 if __name__ == "__main__":
     plt = BarhChart(x, y, ['Year 89', 'Year 90'])
-    plt.savefig('barChart7.jpg')
-    #plt.show()
+    plt.show()

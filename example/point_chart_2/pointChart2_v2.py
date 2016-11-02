@@ -1,5 +1,9 @@
 from matplotlib import pyplot as plt
-from simpleChart import *
+import sys
+
+sys.path.append('../')
+import plotin1 as pi1
+
 
 x = np.array([1, 2, 3, 4, 5, 4, 3, 2, 1, 10])
 y = np.array([10, 9, 8, 7, 6, 5, 4, 2, 2, 1])
@@ -20,5 +24,4 @@ if __name__ == "__main__":
     # Limit the scale
     plt.ylim(0, 11)
     plt.xlim(0, 11)
-    plt.savefig('pointChart2.jpg')
-    #plt.show()
+    plt.show()

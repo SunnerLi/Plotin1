@@ -1,5 +1,9 @@
 from matplotlib import pyplot as plt
-from simpleChart import *
+import sys
+
+sys.path.append('../')
+import plotin1 as pi1
+
 
 x = ['National\npark', 'Beach', 'National\nscenic\narea', 
         'Leisural\nagricultural\narea', 'Forest\nrecreation\narea',
@@ -9,5 +13,4 @@ y = [6, 49, 9, 20, 20, 83, 71, 103, 379]
 if __name__ == "__main__":
     plt = BarChart(x, y, ["Number"])
     plt = BarChart_ylim(plt, 0, 400)
-    plt.savefig('barChart4.jpg')
-    #plt.show()
+    plt.show()
