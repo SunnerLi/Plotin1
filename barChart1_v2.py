@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from simpleChart import *
+from plotin1 import *
 
 # Data declare
 x = ['Buring\nxiancao', 'Hot\norange\ntea', 'Hot\nred\nbean\nsoup',  
