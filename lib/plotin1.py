@@ -134,7 +134,7 @@ def BarStackChart(xTag, _y, labels):
     plt.plot()
     return plt
 
-def LineChart(xTag, _y, labels):
+def LineChart(xTag, _y, labels, dont_show_value=False):
     # Leave the empty blank if dimension isn't equal
     print len(xTag)
     if not len(xTag) == len(_y):
@@ -154,9 +154,10 @@ def LineChart(xTag, _y, labels):
     # Draw the line
     for i in xrange(len(y)):
         line = plt.plot(x, y[i], 'o-', label=labels[i])
-        for a, b in zip(x, y[i]):
-            if not b == 0:
-                plt.text(a, b, str(b))
+        if dont_show_value == False:
+            for a, b in zip(x, y[i]):
+                if not b == 0:
+                    plt.text(a, b, str(b))
 
     # Revise the range of y-axis
     minNum = y[0][0]

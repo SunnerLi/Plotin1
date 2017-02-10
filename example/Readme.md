@@ -81,6 +81,10 @@ y = [25, 26.5, 27, 26.5, 26, 25.5]
 if __name__ == "__main__":
     plt = pi1.LineChart(x, y, ["Weight (kg)"])
     plt.show()
+
+    # With no value shown (The following example didn't have picture)
+    plt = LineChart(x, y, ["Weight (kg)"], dont_show_value=True)
+    plt.show()
 ```
 <br/>
 ## Pie Chart
