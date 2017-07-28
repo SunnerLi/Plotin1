@@ -14,7 +14,13 @@ def addValue():
         value_text = str(x_coordinate)
         ax.text(x_coordinate, y_coordinate, value_text)
 
+def getZeroBar(color):
+    if color == None:
+        exit()
+    return plt.bar(0, 0, color=color)
+
 df = pd.read_csv('shop.csv')
-sns.barplot(x='selling', y='type_of_tea', data=df)
+sns.barplot(x='selling', y='type_of_tea', data=df, color='b')
 addValue()
+plt.legend((getZeroBar('b'), ), ['Cups'])
 plt.show()
