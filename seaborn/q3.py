@@ -3,14 +3,11 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 
-sns.set(style='darkgrid')
-
-def getZeroBar(color):
-    if color == None:
-        exit()
-    return plt.bar(0, 0, color=color)
-
 def addValue():
+    """
+        Add value text
+        (Verticle)
+    """
     ax = plt.gca()
     for p in ax.patches:
         x_coordinate = p.get_x() + p.get_width() / 2.
@@ -18,8 +15,12 @@ def addValue():
         value_text = str(y_coordinate)
         ax.text(x_coordinate, y_coordinate, value_text)
 
-df = pd.read_csv('garbage.csv')
-sns.barplot(x='year', y='weight', data=df, color='b')
-addValue()
-plt.legend(getZeroBar('b'), ['Weight(g)'])
-plt.show()
+if __name__ == '__main__':
+    # Read data
+    df = pd.read_csv('life.csv')
+    df = pd.melt(df, id_vars='country', var_name='sex', value_name='age')
+
+    # Draw and show
+    fig = sns.factorplot(x='country', y='age', hue='sex', data=df, kind='bar')
+    addValue()
+    plt.show()
